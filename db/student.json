@@ -1,0 +1,57 @@
+[{
+  "roll": 1,
+  "fname": "Suraj",
+  "lname": "Jha",
+  "sem": 1,
+  "dept": "CSE",
+  "spass": "12345"
+},{
+  "roll": 2,
+  "fname": "Firdaus",
+  "lname": "Siddiqui",
+  "sem": 2,
+  "dept": "IT",
+  "spass": "23456"
+},{
+  "roll": 3,
+  "fname": "Sreejit",
+  "lname": "Dey",
+  "sem": 3,
+  "dept": "EEE",
+  "spass": "34567"
+},{
+  "roll": 4,
+  "fname": "Rohit",
+  "lname": "Mondal",
+  "sem": 4,
+  "dept": "EE",
+  "spass": "45678"
+},{
+  "roll": 5,
+  "fname": "Subhash",
+  "lname": "Gupta",
+  "sem": 5,
+  "dept": "CSE",
+  "spass": "56789"
+},{
+  "roll": 6,
+  "fname": "Akash",
+  "lname": "Sharma",
+  "sem": 6,
+  "dept": "IT",
+  "spass": "67890"
+},{
+  "roll": 7,
+  "fname": "Afridi",
+  "lname": "Kayal",
+  "sem": 7,
+  "dept": "EEE",
+  "spass": "78901"
+},{
+  "roll": 8,
+  "fname": "Ashish",
+  "lname": "Raj",
+  "sem": 8,
+  "dept": "EE",
+  "spass": "89012"
+}]

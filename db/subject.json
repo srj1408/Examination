@@ -1,0 +1,481 @@
+[{
+  "_id": {
+    "$oid": "6098d3dd264ed8475c0d2311"
+  },
+  "scode": "BS-PH101",
+  "sname": "Physics-I",
+  "sem": 1,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098d504264ed8475c0d2312"
+  },
+  "scode": "BS-M101",
+  "sname": "Mathematics-I",
+  "sem": 1,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098d60e264ed8475c0d2313"
+  },
+  "scode": "BS-PH101",
+  "sname": "Physics-I",
+  "sem": 1,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098d60e264ed8475c0d2314"
+  },
+  "scode": "BS-M101",
+  "sname": "Mathematics-I",
+  "sem": 1,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098d6cf264ed8475c0d2315"
+  },
+  "scode": "BS-CH101",
+  "sname": "Chemistry-I",
+  "sem": 1,
+  "dept": "ECE"
+},{
+  "_id": {
+    "$oid": "6098d6cf264ed8475c0d2316"
+  },
+  "scode": "BS-M102",
+  "sname": "Mathematics-I",
+  "sem": 1,
+  "dept": "ECE"
+},{
+  "_id": {
+    "$oid": "6098d6e9264ed8475c0d2317"
+  },
+  "scode": "BS-CH101",
+  "sname": "Chemistry-I",
+  "sem": 1,
+  "dept": "EE"
+},{
+  "_id": {
+    "$oid": "6098d6e9264ed8475c0d2318"
+  },
+  "scode": "BS-M102",
+  "sname": "Mathematics-I",
+  "sem": 1,
+  "dept": "EE"
+},{
+  "_id": {
+    "$oid": "6098d7e4264ed8475c0d2319"
+  },
+  "scode": "ES-CS201",
+  "sname": "Programming",
+  "sem": 2,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098d7e4264ed8475c0d231a"
+  },
+  "scode": "HM-HU201",
+  "sname": "English",
+  "sem": 2,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098d7fd264ed8475c0d231b"
+  },
+  "scode": "ES-CS201",
+  "sname": "Programming",
+  "sem": 2,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098d7fd264ed8475c0d231c"
+  },
+  "scode": "HM-HU201",
+  "sname": "English",
+  "sem": 2,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098d810264ed8475c0d231d"
+  },
+  "scode": "ES-CS201",
+  "sname": "Programming",
+  "sem": 2,
+  "dept": "ECE"
+},{
+  "_id": {
+    "$oid": "6098d810264ed8475c0d231e"
+  },
+  "scode": "HM-HU201",
+  "sname": "English",
+  "sem": 2,
+  "dept": "ECE"
+},{
+  "_id": {
+    "$oid": "6098d81f264ed8475c0d231f"
+  },
+  "scode": "ES-CS201",
+  "sname": "Programming",
+  "sem": 2,
+  "dept": "EE"
+},{
+  "_id": {
+    "$oid": "6098d81f264ed8475c0d2320"
+  },
+  "scode": "HM-HU201",
+  "sname": "English",
+  "sem": 2,
+  "dept": "EE"
+},{
+  "_id": {
+    "$oid": "6098da87264ed8475c0d2321"
+  },
+  "scode": "ESC 301",
+  "sname": "Analog and Digital Electronics",
+  "sem": 3,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098da87264ed8475c0d2322"
+  },
+  "scode": "PCC-CS302",
+  "sname": "Computer Organisation",
+  "sem": 3,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098dacc264ed8475c0d2323"
+  },
+  "scode": "ESC 301",
+  "sname": "Analog and Digital Electronics",
+  "sem": 3,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098dacc264ed8475c0d2324"
+  },
+  "scode": "PCC-CS302",
+  "sname": "Computer Organisation",
+  "sem": 3,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098dbc0264ed8475c0d2325"
+  },
+  "scode": "PC-EEE301",
+  "sname": "Electric Circuit Theory",
+  "sem": 3,
+  "dept": "ECE"
+},{
+  "_id": {
+    "$oid": "6098dbc0264ed8475c0d2326"
+  },
+  "scode": "PC-EEE302",
+  "sname": "Analog Electronics",
+  "sem": 3,
+  "dept": "ECE"
+},{
+  "_id": {
+    "$oid": "6098dc1a264ed8475c0d2327"
+  },
+  "scode": "PC-EE301",
+  "sname": "Electric Circuit Theory",
+  "sem": 3,
+  "dept": "EE"
+},{
+  "_id": {
+    "$oid": "6098dc1a264ed8475c0d2328"
+  },
+  "scode": "PC-EE302",
+  "sname": "Analog Electronics",
+  "sem": 3,
+  "dept": "EE"
+},{
+  "_id": {
+    "$oid": "6098dd52264ed8475c0d2329"
+  },
+  "scode": "PCC-CS401",
+  "sname": "Discrete Mathematics",
+  "sem": 4,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098dd52264ed8475c0d232a"
+  },
+  "scode": "PCC-CS402",
+  "sname": "Computer Architecture",
+  "sem": 4,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098ddb8264ed8475c0d232b"
+  },
+  "scode": "PCC-CS401",
+  "sname": "Discrete Mathematics",
+  "sem": 4,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098ddb8264ed8475c0d232c"
+  },
+  "scode": "PCC-CS402",
+  "sname": "Computer Architecture",
+  "sem": 4,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098de3a264ed8475c0d232d"
+  },
+  "scode": "PC-EEE401",
+  "sname": "Electric Machine-I",
+  "sem": 4,
+  "dept": "EEE"
+},{
+  "_id": {
+    "$oid": "6098de3a264ed8475c0d232e"
+  },
+  "scode": "PC-EEE402",
+  "sname": "Digital Electronic",
+  "sem": 4,
+  "dept": "EEE"
+},{
+  "_id": {
+    "$oid": "6098de7c264ed8475c0d232f"
+  },
+  "scode": "PC-EE401",
+  "sname": "Electric Machine-I",
+  "sem": 4,
+  "dept": "EE"
+},{
+  "_id": {
+    "$oid": "6098de7c264ed8475c0d2330"
+  },
+  "scode": "PC-EE402",
+  "sname": "Digital Electronic",
+  "sem": 4,
+  "dept": "EE"
+},{
+  "_id": {
+    "$oid": "6098df18264ed8475c0d2331"
+  },
+  "scode": "ESC501",
+  "sname": "Software Engineering",
+  "sem": 5,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098df18264ed8475c0d2332"
+  },
+  "scode": "PCC-CS501",
+  "sname": "Compiler Design",
+  "sem": 5,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098df6f264ed8475c0d2333"
+  },
+  "scode": "ESC501",
+  "sname": "Software Engineering",
+  "sem": 5,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098df6f264ed8475c0d2334"
+  },
+  "scode": "PCC-CS501",
+  "sname": "Compiler Design",
+  "sem": 5,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098dfce264ed8475c0d2335"
+  },
+  "scode": "PC-EEE501",
+  "sname": "Electric Machine-II",
+  "sem": 5,
+  "dept": "EEE"
+},{
+  "_id": {
+    "$oid": "6098dfce264ed8475c0d2336"
+  },
+  "scode": "PC-EEE502",
+  "sname": "Power System-I",
+  "sem": 5,
+  "dept": "EEE"
+},{
+  "_id": {
+    "$oid": "6098dff2264ed8475c0d2337"
+  },
+  "scode": "PC-EE501",
+  "sname": "Electric Machine-II",
+  "sem": 5,
+  "dept": "EE"
+},{
+  "_id": {
+    "$oid": "6098dff2264ed8475c0d2338"
+  },
+  "scode": "PC-EE502",
+  "sname": "Power System-I",
+  "sem": 5,
+  "dept": "EE"
+},{
+  "_id": {
+    "$oid": "6098e079264ed8475c0d2339"
+  },
+  "scode": "PCC-CS601",
+  "sname": "Database Management Systems",
+  "sem": 6,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098e079264ed8475c0d233a"
+  },
+  "scode": "PCC-CS602",
+  "sname": "Computer Networks",
+  "sem": 6,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098e0a6264ed8475c0d233b"
+  },
+  "scode": "PCC-CS601",
+  "sname": "Database Management Systems",
+  "sem": 6,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098e0a6264ed8475c0d233c"
+  },
+  "scode": "PCC-CS602",
+  "sname": "Computer Networks",
+  "sem": 6,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098e156264ed8475c0d233d"
+  },
+  "scode": "PC-EEE601",
+  "sname": "Power System-II",
+  "sem": 6,
+  "dept": "EEE"
+},{
+  "_id": {
+    "$oid": "6098e156264ed8475c0d233e"
+  },
+  "scode": "PC-EEE602",
+  "sname": "Micro processor & micro controller",
+  "sem": 6,
+  "dept": "EEE"
+},{
+  "_id": {
+    "$oid": "6098e190264ed8475c0d233f"
+  },
+  "scode": "PC-EE601",
+  "sname": "Power System-II",
+  "sem": 6,
+  "dept": "EE"
+},{
+  "_id": {
+    "$oid": "6098e190264ed8475c0d2340"
+  },
+  "scode": "PC-EE602",
+  "sname": "Micro processor & micro controller",
+  "sem": 6,
+  "dept": "EE"
+},{
+  "_id": {
+    "$oid": "6098e263264ed8475c0d2341"
+  },
+  "scode": "PEC-CS701B",
+  "sname": "Cloud Computing",
+  "sem": 7,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098e263264ed8475c0d2342"
+  },
+  "scode": "PEC-CS702E",
+  "sname": "Cyber Security",
+  "sem": 7,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098e2e1264ed8475c0d2343"
+  },
+  "scode": "PEC-IT701C",
+  "sname": "Cloud Computing",
+  "sem": 7,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098e2e1264ed8475c0d2344"
+  },
+  "scode": "PEC-IT702F",
+  "sname": "Cyber Security",
+  "sem": 7,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098e38d264ed8475c0d2345"
+  },
+  "scode": "PC-EEE701",
+  "sname": "Analog and Digital Communication",
+  "sem": 7,
+  "dept": "EEE"
+},{
+  "_id": {
+    "$oid": "6098e3be264ed8475c0d2346"
+  },
+  "scode": "PC-EE701",
+  "sname": "Electrive Drive",
+  "sem": 7,
+  "dept": "EE"
+},{
+  "_id": {
+    "$oid": "6098e464264ed8475c0d2347"
+  },
+  "scode": "PEC-CS801B",
+  "sname": "Cryptography & Network Security",
+  "sem": 8,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098e464264ed8475c0d2348"
+  },
+  "scode": "OEC-CS801B",
+  "sname": "Cyber Law",
+  "sem": 8,
+  "dept": "CSE"
+},{
+  "_id": {
+    "$oid": "6098e4d6264ed8475c0d2349"
+  },
+  "scode": "PEC-IT801B",
+  "sname": "Cryptography & Network Security",
+  "sem": 8,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098e4d6264ed8475c0d234a"
+  },
+  "scode": "OEC-IT801B",
+  "sname": "Cyber Law",
+  "sem": 8,
+  "dept": "IT"
+},{
+  "_id": {
+    "$oid": "6098e51a264ed8475c0d234b"
+  },
+  "scode": "PC-EEE801",
+  "sname": "Digital Signal Processing",
+  "sem": 8,
+  "dept": "EEE"
+},{
+  "_id": {
+    "$oid": "6098e575264ed8475c0d234c"
+  },
+  "scode": "PC-EE801",
+  "sname": "Utilization of Electric Power",
+  "sem": 8,
+  "dept": "EE"
+}]
