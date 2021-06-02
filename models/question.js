@@ -33,7 +33,7 @@ const qpaper = new mongoose.Schema({
         required:true
     },
     added:{
-        type:Date,
+        type:Number,
         required:true
     },
     question:[question],
