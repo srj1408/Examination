@@ -6,17 +6,11 @@ const app = express();
 dotenv.config({ path: './config.env' });
 require("./db/connection");
 app.use(express.json());
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.use(require("./router/teacher"));
 
-const Question = require("./models/question");
-const PORT = process.env.PORT;
+const port =5000;
 
-app.get('/questions/:scode', async (req, res) => {
-    const qbank = await Question.find( { "scode": req.params.scode },{"added":1});
-    res.render("qbank",{qbank});
-})
 
-app.listen(PORT, () => {
-    console.log(`app listen on ${PORT} portal`);
+app.listen(process.env.PORT || port, () => {
+    console.log(`app listen on ${PORT}  portal`);
 });

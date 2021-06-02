@@ -13,9 +13,13 @@ const teacher = new mongoose.Schema({
         type: String,
         required: true
     },
-    pass: {
+    email:{
+        type:String,
+        required:true
+    },
+    password: {
         type: String,
-        reuired: true
+        required: true
     }
 });
 module.exports = mongoose.model('Teacher', teacher);
