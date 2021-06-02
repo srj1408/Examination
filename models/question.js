@@ -5,24 +5,21 @@ const question = new mongoose.Schema({
         type: String,
         required: true
     },
-    op: {
-        op1:{
-            type: String,
-            required: true
-        },
-        op2: {
-            type: String,
-            required: true
-        },
-        op3: {
-            type: String,
-            required: true
-        },
-        op4: {
-            type: String,
-            required: true
-        }
-        
+    op1:{
+        type: String,
+        required: true
+    },
+    op2: {
+        type: String,
+        required: true
+    },
+    op3: {
+        type: String,
+        required: true
+    },
+    op4: {
+        type: String,
+        required: true
     },
     ans: {
         type: Number,
@@ -31,17 +28,21 @@ const question = new mongoose.Schema({
 });
 
 const qpaper = new mongoose.Schema({
-    scode:{
+    subjectCode:{
         type:String,
         required:true
     },
     added:{
-        type:Number,
+        type:Date,
         required:true
     },
     question:[question],
-    tcode:{
+    teacherCode:{
         type:String,
+        required:true
+    },
+    submitted:{
+        type:Number,
         required:true
     }
 });

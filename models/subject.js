@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const subject = new mongoose.Schema({
-    scode: {
+    code: {
         type: String,
         required: true
     },
-    sname: {
+    name: {
         type: String,
         reuired: true
     },

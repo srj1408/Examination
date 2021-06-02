@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const teacher = new mongoose.Schema({
-    tcode: {
+    teachercode: {
         type: String,
         required: true
     },
@@ -13,9 +13,13 @@ const teacher = new mongoose.Schema({
         type: String,
         required: true
     },
-    pass: {
+    password: {
         type: String,
         reuired: true
+    },
+    cpassword: {
+        type: String,
+        required: true
     }
 });
 module.exports = mongoose.model('Teacher', teacher);
