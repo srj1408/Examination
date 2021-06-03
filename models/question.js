@@ -1,15 +1,8 @@
 const mongoose = require('mongoose');
 
-const question = new mongoose.Schema({
-   
-});
 
 const qpaper = new mongoose.Schema({
-    scode:{
-        type:String,
-        required:true
-    },
-    tcode:{
+    subjectCode:{
         type:String,
         required:true
     },
@@ -43,8 +36,16 @@ const qpaper = new mongoose.Schema({
             type: Number,
             required: true
         }
-        }]
-    
+        }],
+
+    teacherCode:{
+        type:String,
+        required:true
+    },
+    submitted:{
+        type:Number,
+        required:true
+    }
 });
 
 module.exports = mongoose.model('Question', qpaper);
