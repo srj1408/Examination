@@ -1,5 +1,5 @@
 const express = require("express");
-router =express.Router();
+const router =express.Router();
 const mongoose=require("mongoose");
 const questiondb=require("../models/question");
 
@@ -12,8 +12,7 @@ router.post("/questionBank",(req,res)=>{
         const newQuestionPaper= new questiondb(questionData);
         newQuestionPaper.save();
         res.status(200).json({"message":"question paper added successfully"});
-    }catch(err)
-    {
+    }catch(err){
         console.log(err);
     }
 

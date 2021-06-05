@@ -12,10 +12,10 @@ mongoose.connection.once('open', () => {
 */
 //
 
-const DB = process.env.DATABASE;
+const DB = process.env.DATABASE_URL;
 
 mongoose.connect(DB,{useNewUrlParser:true , useUnifiedTopology:true}).then(()=>{
-    console.log("databse connected successfully");
+    console.log("database connected successfully");
 }).catch((err)=>{
     console.log(err);
 })

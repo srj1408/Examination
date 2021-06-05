@@ -1,8 +1,3 @@
 /config.env
-<<<<<<< HEAD
 /workspace.code-workspace
 node_modules
-=======
-node_modules/
-/workspace.code-workspace
->>>>>>> 0d7bd8f03f9a67e0c4c64f4bfdc1714ee48d741f
