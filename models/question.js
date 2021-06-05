@@ -11,7 +11,7 @@ const qpaper = new mongoose.Schema({
         required: true
     },
     added:{
-        type: Number,
+        type: Date,
         required:true
     },
     question:[
@@ -34,10 +34,6 @@ const qpaper = new mongoose.Schema({
     teacherCode:{
         type:String,
         required:true
-    },
-    submitted:{
-        type:Number,
-        default: 0
     },
     marks: []
 });
