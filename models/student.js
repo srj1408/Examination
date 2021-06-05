@@ -24,6 +24,7 @@ const student = new mongoose.Schema({
     pass: {
         type: String,
         reuired: true
-    }
+    },
+    marks: []
 });
 module.exports = mongoose.model('Student', student);

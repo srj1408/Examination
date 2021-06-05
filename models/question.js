@@ -1,50 +1,45 @@
 const mongoose = require('mongoose');
 
-const question = new mongoose.Schema({
-    qname: {
-        type: String,
-        required: true
-    },
-    op1:{
-        type: String,
-        required: true
-    },
-    op2: {
-        type: String,
-        required: true
-    },
-    op3: {
-        type: String,
-        required: true
-    },
-    op4: {
-        type: String,
-        required: true
-    },
-    ans: {
-        type: Number,
-        required: true
-    }
-});
 
 const qpaper = new mongoose.Schema({
     subjectCode:{
         type:String,
         required:true
     },
+    name: {
+        type: String,
+        required: true
+    },
     added:{
-        type:Number,
+        type: Date,
         required:true
     },
-    question:[question],
+    question:[
+        {
+            title: {
+                type: String,
+                required: true
+            },
+            options: [],
+            correctIndex: {
+                type: Number,
+                required: true
+            },
+            marks: {
+                type: Number,
+                required: true
+            }
+        }
+    ],
     teacherCode:{
         type:String,
         required:true
     },
     submitted:{
         type:Number,
-        required:true
-    }
+        default: 0
+    },
+    marks: []
 });
 
 module.exports = mongoose.model('Question', qpaper);
