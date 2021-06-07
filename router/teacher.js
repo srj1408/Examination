@@ -18,16 +18,9 @@ router.post("/questionBank",(req,res)=>{
 
 });
 
-router.get("/questionBank",async (req,res)=>{
-    try{
-        const questionBank= await questiondb.find();
-        res.send(questionBank);
-    }catch(err){
-        console.log(err);
-    }
-})
 
-router.get("/questionBank/:teacherCode",async (req,res)=>{
+
+/*router.get("/questionBank/:teacherCode",async (req,res)=>{
     try{
         const tcode=req.params.teacherCode;
         const user=await questiondb.find({tcode:tcode});
@@ -45,7 +38,7 @@ router.get("/questionBank/:teacherCode",async (req,res)=>{
         console.log(err);
     }
 
-});
+});*/
 
 
 module.exports=router;

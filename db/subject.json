@@ -1,67 +1,27 @@
 [{
-  "_id": {
-    "$oid": "6098d3dd264ed8475c0d2311"
-  },
-  "scode": "BS-PH101",
-  "sname": "Physics-I",
+  "code": "BS-PH101",
+  "name": "Physics-I",
   "sem": 1,
-  "dept": "CSE"
+  "dept": ["CSE","IT"],
+  "teacherDept": "Basic Science"
 },{
-  "_id": {
-    "$oid": "6098d504264ed8475c0d2312"
-  },
-  "scode": "BS-M101",
-  "sname": "Mathematics-I",
+  "code": "BS-M101",
+  "name": "Mathematics-I",
   "sem": 1,
-  "dept": "CSE"
+  "dept": ["CSE","IT"],
+  "teacherDept": "Basic Science"
+},,{
+  "code": "BS-CH101",
+  "name": "Chemistry-I",
+  "sem": 1,
+  "dept": ["ECE","EE"],
+  "teacherDept": "Basic Science"
 },{
-  "_id": {
-    "$oid": "6098d60e264ed8475c0d2313"
-  },
-  "scode": "BS-PH101",
-  "sname": "Physics-I",
+  "code": "BS-M102",
+  "name": "Mathematics-I",
   "sem": 1,
-  "dept": "IT"
-},{
-  "_id": {
-    "$oid": "6098d60e264ed8475c0d2314"
-  },
-  "scode": "BS-M101",
-  "sname": "Mathematics-I",
-  "sem": 1,
-  "dept": "IT"
-},{
-  "_id": {
-    "$oid": "6098d6cf264ed8475c0d2315"
-  },
-  "scode": "BS-CH101",
-  "sname": "Chemistry-I",
-  "sem": 1,
-  "dept": "ECE"
-},{
-  "_id": {
-    "$oid": "6098d6cf264ed8475c0d2316"
-  },
-  "scode": "BS-M102",
-  "sname": "Mathematics-I",
-  "sem": 1,
-  "dept": "ECE"
-},{
-  "_id": {
-    "$oid": "6098d6e9264ed8475c0d2317"
-  },
-  "scode": "BS-CH101",
-  "sname": "Chemistry-I",
-  "sem": 1,
-  "dept": "EE"
-},{
-  "_id": {
-    "$oid": "6098d6e9264ed8475c0d2318"
-  },
-  "scode": "BS-M102",
-  "sname": "Mathematics-I",
-  "sem": 1,
-  "dept": "EE"
+  "dept": ["ECE","EE"],
+  "teacherDept": "Basic Science"
 },{
   "_id": {
     "$oid": "6098d7e4264ed8475c0d2319"

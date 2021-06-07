@@ -1,25 +1,14 @@
 const mongoose = require('mongoose');
 
 const response = new mongoose.Schema({
-    scode: {
-        type: String,
-        required: true
-    },
-    year: {
-        type: Number,
-        required: true
-    },
     roll: {
         type: Number,
         required: true
     },
-    qname: {
+    qid: {
         type: String,
         required: true
     },
-    opt: {
-        type: String,
-        required: true
-    }
+    options : []
 });
 module.exports = mongoose.model('Response', response);

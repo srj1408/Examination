@@ -4,54 +4,62 @@
   "lname": "Jha",
   "sem": 1,
   "dept": "CSE",
-  "spass": "12345"
+  "pass": "12345",
+  "marks": []
 },{
   "roll": 2,
   "fname": "Firdaus",
   "lname": "Siddiqui",
   "sem": 2,
   "dept": "IT",
-  "spass": "23456"
+  "pass": "23456",
+  "marks": []
 },{
   "roll": 3,
   "fname": "Sreejit",
   "lname": "Dey",
   "sem": 3,
   "dept": "EEE",
-  "spass": "34567"
+  "pass": "34567",
+  "marks": []
 },{
   "roll": 4,
   "fname": "Rohit",
   "lname": "Mondal",
   "sem": 4,
   "dept": "EE",
-  "spass": "45678"
+  "password": "45678",
+  "marks": []
 },{
   "roll": 5,
   "fname": "Subhash",
   "lname": "Gupta",
   "sem": 5,
   "dept": "CSE",
-  "spass": "56789"
+  "password": "56789",
+  "marks": []
 },{
   "roll": 6,
   "fname": "Akash",
   "lname": "Sharma",
   "sem": 6,
   "dept": "IT",
-  "spass": "67890"
+  "password": "67890",
+  "marks": []
 },{
   "roll": 7,
   "fname": "Afridi",
   "lname": "Kayal",
   "sem": 7,
   "dept": "EEE",
-  "spass": "78901"
+  "password": "78901",
+  "marks": []
 },{
   "roll": 8,
   "fname": "Ashish",
   "lname": "Raj",
   "sem": 8,
   "dept": "EE",
-  "spass": "89012"
+  "password": "89012",
+  "marks": []
 }]

@@ -13,8 +13,9 @@ const subject = new mongoose.Schema({
         type: Number,
         reuired: true
     },
-    dept: {
-        type: String,
+    dept: [],
+    teacherDept: {
+        type : String,
         required: true
     }
 

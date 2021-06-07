@@ -6,6 +6,8 @@ dotenv.config({ path: './config.env' });
 require("./db/connection");
 
 const app = express();
+
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -14,7 +16,8 @@ app.use(function(req, res, next) {
     next();
 });
 app.use(require("./router/teacher"));
-app.use(require('./router/question'));
+app.use(require("./router/question"));
+app.use(require("./router/student"));
 
 app.get('/', (req, res) => {
     res.send('Welcome to Examination System');
