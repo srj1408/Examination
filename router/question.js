@@ -6,7 +6,7 @@ const Teacher = require("../models/teacher");
 const Student = require("../models/student");
 const Subject = require("../models/subject");
 const Response = require("../models/response");
-router.get("/questionBank/:type/:dept/:sem?",async (req,res)=>{
+router.get("/questionBank/:type?/:dept?/:sem?",async (req,res)=>{
     try{
         const type = req.params.type;
         const dept = req.params.dept;
