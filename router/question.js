@@ -8,15 +8,15 @@ const Subject = require("../models/subject");
 const Response = require("../models/response");
 router.get("/questionBank",async (req,res)=>{
     try{
-        var type = req.body.type;
+        var type = req.params.type;
         if(type === "student"){
-            const sem = req.body.sem;
-            const dept = req.body.dept;
+            const sem = req.params.sem;
+            const dept = req.params.dept;
             const subject = await Subject.find({"sem":sem,"dept":dept});
             res.send(subject);
         }
         else{
-            const dept = req.body.tdept;
+            const dept = req.params.tdept;
             const subject = await Subject.find({"teacherDept":dept});
             res.send(subject);
         }
