@@ -6,17 +6,16 @@ const Teacher = require("../models/teacher");
 const Student = require("../models/student");
 const Subject = require("../models/subject");
 const Response = require("../models/response");
-router.get("/questionBank",async (req,res)=>{
+router.get("/questionBank/:type/:dept/:sem?",async (req,res)=>{
     try{
-        var type = req.body.type;
+        const type = req.params.type;
+        const dept = req.params.dept;
         if(type === "student"){
-            const sem = req.body.sem;
-            const dept = req.body.dept;
+            const sem = req.params.sem;
             const subject = await Subject.find({"sem":sem,"dept":dept});
             res.send(subject);
         }
         else{
-            const dept = req.body.tdept;
             const subject = await Subject.find({"teacherDept":dept});
             res.send(subject);
         }
