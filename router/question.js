@@ -8,15 +8,15 @@ const Subject = require("../models/subject");
 const Response = require("../models/response");
 router.get("/questionBank",async (req,res)=>{
     try{
-        var type = req.body.type;
+        var type = req.query.type;
         if(type === "student"){
-            const sem = req.body.sem;
-            const dept = req.body.dept;
+            const sem = req.query.sem;
+            const dept = req.query.dept;
             const subject = await Subject.find({"sem":sem,"dept":dept});
             res.send(subject);
         }
         else{
-            const dept = req.body.tdept;
+            const dept = req.query.tdept;
             const subject = await Subject.find({"teacherDept":dept});
             res.send(subject);
         }
@@ -57,8 +57,8 @@ router.post("/currentexam",(req,res)=>{
 });
 router.get("/currentexam", async(req,res)=>{
     try{
-        const sem = req.body.sem;
-        const dept = req.body.dept;
+        const sem = req.query.sem;
+        const dept = req.query.dept;
         const subject = await Subject.find({"dept":dept,"sem":sem});
         var scode = [];
         for(let s of subject){

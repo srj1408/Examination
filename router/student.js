@@ -4,7 +4,7 @@ const mongoose=require("mongoose");
 const Student=require("../models/student");
 router.get("/student",async (req,res)=>{
     try{
-        const roll = req.body.roll;
+        const roll = req.query.roll;
         const student= await Student.find({"roll": roll});
         res.send(student);
     }catch(err){
