@@ -8,7 +8,7 @@ const Subject = require("../models/subject");
 const Response = require("../models/response");
 router.get("/questionBank",async (req,res)=>{
     try{
-        var type = req.query.type;
+        const type = req.query.type;
         if(type === "student"){
             const sem = req.query.sem;
             const dept = req.query.dept;
