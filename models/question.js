@@ -1,5 +1,21 @@
 const mongoose = require('mongoose');
 
+const question = new mongoose.Schema({
+        title: {
+            type: String,
+            required: true
+        },
+        options: [],
+        correctIndex: {
+            type: Number,
+            required: true
+        },
+        marks: {
+            type: Number,
+            required: true
+        }
+
+});
 
 const qpaper = new mongoose.Schema({
     subjectCode:{
@@ -14,23 +30,7 @@ const qpaper = new mongoose.Schema({
         type: Date,
         required:true
     },
-    question:[
-        {
-            title: {
-                type: String,
-                required: true
-            },
-            options: [],
-            correctIndex: {
-                type: Number,
-                required: true
-            },
-            marks: {
-                type: Number,
-                required: true
-            }
-        }
-    ],
+    questions: [question],
     teacherCode:{
         type:String,
         required:true
