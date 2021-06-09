@@ -5,7 +5,7 @@ const Student=require("../models/student");
 router.get("/student",async (req,res)=>{
     try{
         const roll = req.query.roll;
-        const student= await Student.find({"roll": roll});
+        const student= await Student.findOne({"roll": roll});
         res.send(student);
     }catch(err){
         console.log(err);

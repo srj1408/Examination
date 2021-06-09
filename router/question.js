@@ -36,7 +36,7 @@ router.get("/questionBank/:scode",async (req,res)=>{
 })
 router.get("/questionBank/:scode/:year",async (req,res)=>{
     try{
-        const qpaper = await Question.find({"subjectCode":req.params.scode, "added":req.params.year});
+        const qpaper = await Question.findOne({"subjectCode":req.params.scode, "added":req.params.year});
         res.send(qpaper);
     }catch(err){
         console.log(err);
@@ -78,7 +78,7 @@ router.get("/currentexam", async(req,res)=>{
         for(let s of subject){
             scode.push(s.code);
         }
-        const qpaper = await Question.find({"subjectCode":{ $in: scode }}).sort({"added":-1});
+        const qpaper = await Question.findOne({"subjectCode":{ $in: scode }}).sort({"added":-1});
         res.send(qpaper);
     }catch(err){
         console.log(err);
