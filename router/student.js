@@ -10,6 +10,15 @@ router.get("/student",async (req,res)=>{
     }catch(err){
         console.log(err);
     }
+});
+router.get("/student/result",async (req,res)=>{
+    try{
+        const roll = req.query.roll;
+        const student= await Student.findOne({"roll": roll});
+        res.send(student.marks);
+    }catch(err){
+        console.log(err);
+    }
 })
 
 

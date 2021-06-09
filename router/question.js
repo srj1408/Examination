@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require("mongoose");
+mongoose.set('useFindAndModify',false);
 const router = express.Router();
 const Question = require("../models/question");
 const Teacher = require("../models/teacher");
@@ -50,6 +51,19 @@ router.post("/currentexam",(req,res)=>{
         const newResponse= new Response({"roll":roll,"qid":qid,"options":options});
         newResponse.save();
         res.status(200).json({"message":"Response submitted successfully"});
+    }catch(err){
+        console.log(err);
+    }
+
+});
+router.put("/currentexam/:id", async(req,res)=>{
+    const roll = req.body.roll;
+    const name = req.body.name;
+    const mark = req.body.mark;
+    try{
+        const qpaper = await Question.findByIdAndUpdate({_id:req.params.id},{marks:[{roll,name,mark}]});
+        const student = await Student.findOneAndUpdate({roll},{marks:[{"date":qpaper.added,"subjectCode":qpaper.subjectCode,mark}]});
+        res.send("Updated Succesfully");
     }catch(err){
         console.log(err);
     }
