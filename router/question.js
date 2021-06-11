@@ -61,8 +61,8 @@ router.put("/currentexam/:id", async(req,res)=>{
     const name = req.body.name;
     const mark = req.body.mark;
     try{
-        const qpaper = await Question.findByIdAndUpdate({_id:req.params.id},{marks:[{roll,name,mark}]});
-        const student = await Student.findOneAndUpdate({roll},{marks:[{"date":qpaper.added,"subjectCode":qpaper.subjectCode,mark}]});
+        const qpaper = await Question.findByIdAndUpdate({_id:req.params.id},{$push:{marks:{roll,name,mark}}});
+        const student = await Student.findOneAndUpdate({roll},{$push:{marks:{"date":qpaper.added,"subjectCode":qpaper.subjectCode,mark}}});
         res.send("Updated Succesfully");
     }catch(err){
         console.log(err);
