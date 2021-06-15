@@ -10,7 +10,7 @@
   "sem": 1,
   "dept": ["CSE","IT"],
   "teacherDept": "Basic Science"
-},,{
+},{
   "code": "BS-CH101",
   "name": "Chemistry-I",
   "sem": 1,

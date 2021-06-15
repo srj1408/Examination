@@ -26,6 +26,14 @@ router.get("/questionBank",async (req,res)=>{
         console.log(err);
     }
 })
+router.get("/questionBankId/:id",async (req,res)=>{
+    try{
+        const qPaper = await Question.findById(req.params.id);
+        res.send(qPaper);
+    }catch(err){
+        console.log(err);
+    }
+})
 router.get("/questionBank/:scode",async (req,res)=>{
     try{
         const qbank = await Question.find({"subjectCode":req.params.scode});
