@@ -26,16 +26,12 @@ const qpaper = new mongoose.Schema({
         type: String,
         required: true
     },
-    added:{
-        type: Date,
-        required:true
-    },
     questions: [question],
     teacherCode:{
         type:String,
         required:true
     },
     marks: []
-});
+}, {timestamps: {createdAt: "added", updatedAt: false}});
 
 module.exports = mongoose.model('Question', qpaper);
