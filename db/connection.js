@@ -13,8 +13,8 @@ mongoose.connection.once('open', () => {
 //
 
 // const DB = process.env.DATABASE_URL;
-const DB = 'mongodb://localhost:27017/examination';
-// const DB = 'mongodb+srv://Srj1408:Suraj@140899@cluster0.dcblo.mongodb.net/examination?retryWrites=true&w=majority'
+// const DB = 'mongodb://localhost:27017/examination';
+const DB = 'mongodb+srv://Srj1408:Suraj@140899@cluster0.dcblo.mongodb.net/examination?retryWrites=true&w=majority'
 
 mongoose.connect(DB,{useNewUrlParser:true , useUnifiedTopology:true}).then(()=>{
     console.log("database connected successfully");
