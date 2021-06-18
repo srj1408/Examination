@@ -2,15 +2,11 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
 const teacher = new mongoose.Schema({
-    teachercode: {
+    teacherCode: {
         type: String,
         required: true
     },
-    fname: {
-        type: String,
-        required: true
-    },
-    lname: {
+    name: {
         type: String,
         required: true
     },

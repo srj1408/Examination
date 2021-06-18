@@ -6,11 +6,11 @@ const student = new mongoose.Schema({
         type: Number,
         required: true
     },
-    fname: {
+    name: {
         type: String,
         required: true
     },
-    lname: {
+    email: {
         type: String,
         required: true
     },
