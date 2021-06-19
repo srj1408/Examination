@@ -35,17 +35,18 @@ router.post('/teacherSignup', async (req,res)=>
 
 router.post('/teacherLogin',async(req,res)=>{   
     try{
-        const {email,password}=req.body;
-        const userExist=await teacherdb.findOne({email:email});
+        const { teacherCode ,password }=req.body;
+        const userExist=await teacherdb.findOne({ teacherCode });
         if(userExist)
         {
             const match = await bcrypt.compare(password,userExist.password);
             if(match){
-                id=userExist._id;
-                const token =jwt.sign({id},'test spot secret');
+                const id = userExist._id;
+                const token = jwt.sign({id},'test spot secret');
+                const { name, teacherCode, dept } = userExist;
                 res.cookie('jwt',token,{maxAge:1*24*60*60*1000});
                 console.log(token);
-                return res.json({message:"sign in successfully"});
+                return res.json({ message:"sign in successfully", user: { name, teacherCode, dept }});
             }
             else{
                 return res.json({message:"invalid credential"});

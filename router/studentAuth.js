@@ -31,11 +31,12 @@ router.post('/studentLogin',async (req,res)=>{
         if(userExist){
             const match=await bcrypt.compare(pass,userExist.pass);
             if(match){
-                id=userExist._id;
-                const token =jwt.sign({id},'test spot secret');
+                const { name, roll, sem, dept, marks } = userExist;
+                const id = userExist._id;
+                const token = jwt.sign({id},'test spot secret');
                 res.cookie('jwt',token,{maxAge:1*24*60*60*1000});
                 console.log(token);
-               return res.json({message:"user signed in successfully"});
+               return res.json({message:"user signed in successfully", user: { name, roll, sem, dept, marks }});
             }else{
                 return res.json({message:"invalid credential"});
             }
