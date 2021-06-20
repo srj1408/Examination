@@ -46,14 +46,14 @@ router.post('/teacherLogin',async(req,res)=>{
                 const { name, teacherCode, dept } = userExist;
                 res.cookie('jwt',token,{maxAge:1*24*60*60*1000});
                 console.log(token);
-                return res.json({ message:"sign in successfully", user: { name, teacherCode, dept }});
+                return res.json({ message:"sign in successfully", user: { name, teacherCode, dept, type: "teacher" }});
             }
             else{
                 return res.json({message:"invalid credential"});
             }
         }
         else{
-            return res.json({message:"user doesn't found",statusCode:"404"});
+            return res.json({message:"user is not found",statusCode:"404"});
         }
 
     }catch(err){

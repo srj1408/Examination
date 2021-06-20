@@ -36,13 +36,13 @@ router.post('/studentLogin',async (req,res)=>{
                 const token = jwt.sign({id},'test spot secret');
                 res.cookie('jwt',token,{maxAge:1*24*60*60*1000});
                 console.log(token);
-               return res.json({message:"user signed in successfully", user: { name, roll, sem, dept, marks }});
+               return res.json({message:"user signed in successfully", user: { name, roll, sem, dept, marks, type: "student" }});
             }else{
                 return res.json({message:"invalid credential"});
             }
         }
         else{
-            return res.json({message:"user does not found"});
+            return res.json({message:"user is not found"});
         }
     }catch(err)
     {

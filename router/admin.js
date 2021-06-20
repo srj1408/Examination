@@ -10,7 +10,7 @@ router.post("/addStudent",async(req,res)=>{
     try{
         const userExist = await Student.findOne({roll: studentData.roll});
         if(userExist){
-            return res.status(422).json({"message":'Already exists'});             
+            return res.status(409).json({"message":'Already exists'});             
         }else{
             const newStudent= new Student(studentData);
             newStudent.save();
@@ -27,7 +27,7 @@ router.post("/addTeacher",async(req,res)=>{
     try{
         const userExist = await Teacher.findOne({teacherCode: teacherData.teacherCode});
         if(userExist){
-            return res.status(422).json({"message":'Already exists'});             
+            return res.status(409).json({"message":'Already exists'});             
         }else{
             const newTeacher= new Teacher(teacherData);
             newTeacher.save();
@@ -44,7 +44,7 @@ router.post("/addSubject",async(req,res)=>{
     try{
         const subjectExist = await Subject.findOne({code: subjectData.code});
         if(subjectExist){
-            return res.status(422).json({"message":'Already exists'});             
+            return res.status(409).json({"message":'Already exists'});             
         }else{
             const newSubject= new Subject(subjectData);
             newSubject.save();
