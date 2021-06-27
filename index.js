@@ -24,6 +24,7 @@ app.use(require("./router/question"));
 app.use(require("./router/student"));
 app.use(require("./router/teacherAuth"));
 app.use(require("./router/studentAuth"));
+app.use(require("./router/adminAuth"));
 app.use(require("./router/logout"));
 app.use(require("./router/admin"));
 
