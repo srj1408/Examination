@@ -31,7 +31,11 @@ const qpaper = new mongoose.Schema({
         type:String,
         required:true
     },
-    marks: []
+    marks: [],
+    time: {
+        type: Number,
+        required: true
+    }
 }, {timestamps: {createdAt: "added", updatedAt: false}});
 
 module.exports = mongoose.model('Question', qpaper);
